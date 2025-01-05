@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja Pakaian Muslimah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Jasa Anti Patah Hati</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kategori">Kategori</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#cart">Keranjang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2></h2>
+        <p>AKAN MELAYANI SEPENUH HATI DAN SENYUMAN</p>
+        <a href="#produk" class="cta-btn">LIHAT JASA</a>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk">
+        <h2>PROMO AKHIR BULAN</h2>
+        <div class="produk-container">
+            <!-- Produk Item -->
+            <div class="produk-item">
+                <img src="uang bensin.jpeg" alt="uang bensin" width="250">
+                <h3>PAKET HEMAT
+                BENSIN DAN MAKAN</h3>
+                <p>Rp 300.000</p>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <div class="produk-item">
+                <img src="curhat.jpeg" alt="curhat" width="250">
+                <h3>PAKET CURHAT
+                CURHAT 10 JAM,MAKAN,DAN BENSIN</h3>
+                <p>Rp 500.000</p>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <div class="produk-item">
+                <img src="pelayan.jpeg" alt="full pelayanan" width="250">
+                <h3>PAKET ELIT
+                FULL MEMBANTU APAPUN</h3>
+                <p>Rp 3.500.000</p>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <!-- Tambahkan lebih banyak produk di sini -->
+        </div>
+    </section>
+
+    <!-- Kategori Section -->
+    <section id="kategori">
+        <h2>Kategori Produk</h2>
+        <div class="kategori-container">
+            <div class="kategori-item">
+                <h3>MARAH</h3>
+            </div>
+            <div class="kategori-item">
+                <h3>BIASA AJA</h3>
+            </div>
+            <div class="kategori-item">
+                <h3>SENANG</h3>
+            </div>
+            <div class="kategori-item">
+                <h3>SANGAT SENANG</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami menyediakan berbagai macam jasa untuk menemani anda yang sedang
+        patah hati dengan pilihan dongo anda.</p>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Jika ada yang mau ribut silahkan hubungi ig:tyaz_abi wa:081586883496</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 JASA ANTI SAKIT HATI. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        // JavaScript untuk fitur "Tambah ke Keranjang"
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                alert("Produk telah ditambahkan ke keranjang.");
+            });
+        });
+    </script>
+
+</body>
+</html>
+<style type="text/css">/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section Styling */
+#hero {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Produk Section Styling */
+#produk {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produk-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produk-item {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.produk-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produk-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.produk-item p {
+    font-size: 18px;
+    color: #e67e22;
+}
+
+.add-to-cart {
+    background-color: #2ecc71;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #27ae60;
+}
+
+/* Kategori Section Styling */
+#kategori {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.kategori-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.kategori-item {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.kategori-item:hover {
+    background-color: #27ae60;
+}
+
+/* Tentang Kami Section Styling */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Kontak Section Styling */
+#contact {
+    background-color: #34495e;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
